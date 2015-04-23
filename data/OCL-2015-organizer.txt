@@ -1,0 +1,19 @@
+
+
+
+Organizers
+==========
+Achim D. Brucker, SAP SE, Germany
+Marina Egea, Indra Sistemas S.A., Spain
+Martin Gogolla, University of Bremen, Germany
+Frédéric Tuong, Univ. Paris-Sud, IRT SystemX, LRI, CNRS, France
+
+Organizers Mail ('£' will be replaced by '@')
+=============================================
+achim.brucker£sap.com
+msegea£indra.es
+gogolla£informatik.uni-bremen.de
+frederic.tuong£{u-psud, irt-systemx, lri}.fr
+
+Programme Committee
+===================

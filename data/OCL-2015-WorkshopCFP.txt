@@ -1,0 +1,55 @@
+                      http://ocl2015.lri.fr
+
+Modeling started out with UML and its precursors as a graphical
+notation. Such visual representations enable direct intuitive
+capturing of reality, but some of their features are difficult to
+formalize and lack the level of precision required to create complete
+and unambiguous specifications. Limitations of the graphical notations
+encouraged the development of text-based modeling languages that
+either integrate with or replace graphical notations for
+modeling. Typical examples of such languages are OCL, textual MOF,
+Epsilon, and Alloy. Textual modeling languages have their roots in
+formal language paradigms like logic, programming and databases.
+
+The goal of this workshop is to create a forum where researchers and
+practitioners interested in building models using OCL or other kinds
+of textual languages can directly interact, report advances, share
+results, identify tools for language development, and discuss
+appropriate standards. In particular, the workshop will encourage
+discussions for achieving synergy from different modeling language
+concepts and modeling language use. The close interaction will enable
+researchers and practitioners to identify common interests and options
+for potential cooperation.
+
+...
+===================================================
+-  
+
+
+
+...
+=====
+
+
+...
+===============
+
+...
+===========
+
+* 
+* 
+* 
+
+...
+===============
+
+Organizers
+==========
+Achim D. Brucker, SAP SE, Germany
+Marina Egea, Indra Sistemas S.A., Spain
+Martin Gogolla, University of Bremen, Germany
+Frederic Tuong, Univ. Paris-Sud - IRT SystemX - LRI, France
+
+...
+===================
