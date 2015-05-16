@@ -78,7 +78,7 @@ module CFP = struct
   let content fic = L.of_enum (BatFile.lines_of fic)
   let content' fic = String.concat "\n" (content fic)
 
-  let parse file =
+  let parse insert file =
     let rec aux l ll = function
       | x :: xs ->
         if try x.[0] = '=' with _ -> false then
@@ -90,7 +90,7 @@ module CFP = struct
     aux [] [] @@ List.rev @@ let rec goto_empty = function
                                | "" :: xs -> xs
                                | _ :: xs -> goto_empty xs in
-                             goto_empty @@ content file
+                             goto_empty @@ insert @@ content file
 
   (* *)
 
@@ -104,11 +104,11 @@ module CFP = struct
       ; submission_title, submission_body
       ; important_date_title, _
       ; _
-      ; _ ] = parse "data/OCL-2015-WorkshopCFP.txt"
+      ; pc_title, _ ] = parse (fun x -> x) "data/OCL-2015-WorkshopCFP.txt"
   let [ _
       ; organizer_title, organizer_body
-      ; organizer_mail_title, organizer_mail_body
-      ; pc_title, pc_body ] = parse "data/OCL-2015-organizer.txt"
+      ; _, organizer_mail_body
+      ; _, pc_body ] = parse (fun x -> "" :: "" :: "" :: x) "data/OCL-2015-organizer.txt"
 
   let split_nl = L.group_consecutive (fun a b -> a <> "" && b <> "")
   let conc = concat "\n"
@@ -162,5 +162,11 @@ module CFP = struct
     match img with None -> <:html< >> | Some img ->
       <:html< <img src=$str: img $ alt=$str: important_date_title $ style="width:100%"></img> >>
   let organizer_body = sp_people organizer_body
-  let pc_body = sp_people pc_body
+  let pc_body =
+    let pc, url =
+      BatList.split
+        (BatList.map
+           (function [x] -> x, None | [x;y] -> x, Some y)
+           (L.group_consecutive (let f x = BatChar.is_lowercase x.[0] in fun a b -> f a || f b) pc_body)) in
+    url, sp_people pc
 end
