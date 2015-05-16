@@ -124,7 +124,7 @@ module CFP = struct
   (* *)
 
   let intro_body1, intro_body2 =
-    let [intro_body1 ; [""] ; intro_body2] = split_nl intro_body in
+    let [ _ ; [""] ; intro_body1 ; [""] ; intro_body2 ] = split_nl intro_body in
     conc intro_body1, conc intro_body2
   let topics_body1, topics_body2 =
     let [topics_body1 ; [""] ; topics_body2] = split_nl topics_body in
