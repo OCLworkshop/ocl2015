@@ -18,7 +18,7 @@ modeling. Typical examples of such languages are OCL, textual MOF,
 Epsilon, and Alloy. Textual modeling languages have their roots in
 formal language paradigms like logic, programming and databases.
 
-The goal of this workshop is create a forum where researchers and
+The goal of this workshop is to create a forum where researchers and
 practitioners interested in building models using OCL or other kinds
 of textual languages can directly interact, report advances, share
 results, identify tools for language development, and discuss
@@ -90,7 +90,7 @@ Three types of papers will be considered:
 * tool papers (between 6 and 8 pages), and
 * full papers (between 12 and 16 pages)
 in LNCS format. Submissions should be uploaded to EasyChair
-(https://www.easychair.org/account/signin.cgi?conf=ocl2015). The
+(https://easychair.org/conferences/?conf=ocl20150).  The
 program committee will review the submissions (minimum 2 reviews per
 paper, usually 3 reviews) and select papers according to their
 relevance and interest for discussions that will take place at the
@@ -133,4 +133,4 @@ Frederic Tuong, Univ. Paris-Sud - IRT SystemX - LRI, France
 Claas Wilke, Technische Universitat Dresden, Germany
 Edward Willink, Willink Transformations Ltd., UK
 Burkhart Wolff, Univ. Paris-Sud - LRI, France
-Steffen Zschaler, King’s College, UK
+Steffen Zschaler, King's College, UK
