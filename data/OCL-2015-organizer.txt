@@ -1,6 +1,4 @@
 
-
-
 Organizers
 ==========
 Achim D. Brucker, SAP SE, Germany
@@ -17,3 +15,25 @@ frederic.tuong£{u-psud, irt-systemx, lri}.fr
 
 Programme Committee
 ===================
+Mira Balaban, Ben-Gurion University of the Negev, Israel
+Tricia Balfe, Nomos Software, Ireland
+Achim D. Brucker, SAP SE, Germany
+Fabian Buettner, Inria - Ecole des Mines de Nantes, France
+Jordi Cabot, Inria - Ecole des Mines de Nantes, France
+Dan Chiorean, Babes-Bolyai University, Romania
+Robert Clariso, Universitat Oberta de Catalunya, Spain
+Tony Clark, Middlesex University, UK
+Manuel Clavel, IMDEA Software Institute, Spain
+Carolina Dania, IMDEA Software Institute, Spain
+Birgit Demuth, Technische Universitat Dresden, Germany
+Marina Egea, Indra Sistemas S.A., Spain
+Geri Georg, Colorado State University, USA
+Martin Gogolla, University of Bremen, Germany
+Shahar Maoz, Tel Aviv University, Israel
+Istvan Rath, Budapest University of Technology and Economics, Hungary
+Bernhard Rumpe, RWTH Aachen, Germany
+Frederic Tuong, Univ. Paris-Sud - IRT SystemX - LRI, France
+Claas Wilke, Technische Universitat Dresden, Germany
+Edward Willink, Willink Transformations Ltd., UK
+Burkhart Wolff, Univ. Paris-Sud - LRI, France
+Steffen Zschaler, King’s College, UK
