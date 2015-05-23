@@ -51,3 +51,5 @@ rm $fic.pdf
 f=$dir/$fic.2.png
 pngcrush -rem gAMA -rem cHRM -rem iCCP -rem sRGB $dir/$fic.png $f
 mv $f $dir/$fic.png
+
+# see also: https://openclipart.org/download/121621/Maple-Leaf-by-Merlin2525.svg
