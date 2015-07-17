@@ -63,7 +63,7 @@ module Organizing : PAGE = struct
 
   let l = List.map f [ Name (CFP.webpage, CFP.organizer_body)
                      ; Title <:html< <h3><b>$str: CFP.pc_title $</b></h3> >>
-                     ; Name ([], CFP.pc_body) ]
+                     ; Name CFP.pc_body ]
 
   let body = body ("Workshop Organizers", <:html<
 $list: l $

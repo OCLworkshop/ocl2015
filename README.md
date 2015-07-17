@@ -1,1 +1,139 @@
-# ocl2015
+##                     CALL FOR PAPERS
+###     15th International Workshop on OCL and Textual Modeling
+###           Tools and Textual Model Transformations
+
+Co-located with ACM/IEEE 18th International Conference on
+Model Driven Engineering Languages and Systems [MODELS 2015](http://cruise.eecs.uottawa.ca/models2015/)
+#####        September 28th, 2015, Ottawa, Canada
+[http://ocl2015.lri.fr](http://ocl2015.lri.fr/)
+
+Modeling started out with UML and its precursors as a graphical
+notation. Such visual representations enable direct intuitive
+capturing of reality, but some of their features are difficult to
+formalize and lack the level of precision required to create complete
+and unambiguous specifications. Limitations of the graphical notations
+encouraged the development of text-based modeling languages that
+either integrate with or replace graphical notations for
+modeling. Typical examples of such languages are OCL, textual MOF,
+Epsilon, and Alloy. Textual modeling languages have their roots in
+formal language paradigms like logic, programming and databases.
+
+The goal of this workshop is to create a forum where researchers and
+practitioners interested in building models using OCL or other kinds
+of textual languages can directly interact, report advances, share
+results, identify tools for language development, and discuss
+appropriate standards. In particular, the workshop will encourage
+discussions for achieving synergy from different modeling language
+concepts and modeling language use. The close interaction will enable
+researchers and practitioners to identify common interests and options
+for potential cooperation.
+
+## Topics of interest include (but are not limited to)
+
+* Mappings between textual modeling languages and other languages/formalisms
+* Algorithms, evaluation strategies and optimizations in the context
+  of textual modeling languages for
+  - validation, verification, and testing,
+  - model transformation and code generation,
+  - meta-modeling and DSLs, and
+  - query and constraint specifications
+* Alternative graphical/textual notations for textual modeling languages
+* Evolution, transformation and simplification of textual modeling
+  expressions
+* Libraries, templates and patterns for textual modeling languages
+* Tools that support textual modeling languages (e.g., verification of
+  OCL formulae, runtime monitoring of invariants)
+* Complexity results for textual modeling languages
+* Quality models and benchmarks for comparing and evaluating
+  textual modeling tools and algorithms
+* Successful applications of textual modeling languages
+* Case studies on industrial applications of textual modeling languages
+* Experience reports
+  - usage of textual modeling languages and tools in complex domains,
+  - usability of textual modeling languages and tools for end-users
+* Empirical studies about the benefits and drawbacks of textual modeling
+  languages
+* Innovative textual modeling tools
+* Comparison, evaluation and integration of modeling languages
+* Correlation between modeling languages and modeling tasks
+
+This year, we particularly encourage submissions describing tools that
+support *in a very broad sense* textual modeling languages (if you
+have implemented `OCL.js` to run OCL in a web browser, this is the right
+workshop to present your work) as well as textual model
+transformations.
+
+## Venue
+
+The workshop will be organized as a part of MODELS 2015 Conference in
+Ottawa, Canada. It continues the series of OCL workshops held at
+UML/MODELS conferences: York (2000), Toronto (2001), San Francisco
+(2003), Lisbon (2004), Montego Bay (2005), Genova (2006), Nashville
+(2007), Toulouse (2008), Denver (2009), Oslo (2010), Zurich (2011, at
+the TOOLs conference), 2012 in Innsbruck, 2013 in Miami, and 2014 in
+Valencia, Spain. Similar to its predecessors, the workshop addresses
+both people from academia and industry. The aim is to provide a forum
+for addressing integration of OCL and other textual modeling
+languages, as well as tools for textual modeling, and for
+disseminating good practice and discussing the new requirements for
+textual modeling.
+
+## Workshop Format
+
+The workshop will include short (about 15 min) presentations, parallel
+sessions of working groups, and sum-up discussions.
+
+## Submissions
+
+Three types of papers will be considered:
+
+* short papers (between 6 and 8 pages) describing ideas,
+* tool papers (between 6 and 8 pages), and
+* full papers (between 12 and 16 pages)
+in LNCS format. Submissions should be uploaded to EasyChair
+[https://easychair.org/conferences/?conf=ocl20150](https://easychair.org/conferences/?conf=ocl20150).  The
+program committee will review the submissions (minimum 2 reviews per
+paper, usually 3 reviews) and select papers according to their
+relevance and interest for discussions that will take place at the
+workshop. Accepted papers will be published online in a
+pre-conference edition of CEUR (http://www.ceur-ws.org).
+
+## Important Dates
+
+```
+Submission of papers:      July 17, 2015
+Notification:            August 21, 2015
+Workshop date:        September 28, 2015
+```
+
+## Organizers
+
+* Achim D. Brucker, SAP SE, Germany
+* Marina Egea, Indra Sistemas S.A., Spain
+* Martin Gogolla, University of Bremen, Germany
+* Frederic Tuong, Univ. Paris-Sud - IRT SystemX - LRI, France
+
+## Programme Committee
+
+* Mira Balaban, Ben-Gurion University of the Negev, Israel
+* Tricia Balfe, Nomos Software, Ireland
+* Achim D. Brucker, SAP SE, Germany
+* Fabian Buettner, Inria - Ecole des Mines de Nantes, France
+* Jordi Cabot, Inria - Ecole des Mines de Nantes, France
+* Dan Chiorean, Babes-Bolyai University, Romania
+* Robert Clariso, Universitat Oberta de Catalunya, Spain
+* Tony Clark, Middlesex University, UK
+* Manuel Clavel, IMDEA Software Institute, Spain
+* Carolina Dania, IMDEA Software Institute, Spain
+* Birgit Demuth, Technische Universitat Dresden, Germany
+* Marina Egea, Indra Sistemas S.A., Spain
+* Geri Georg, Colorado State University, USA
+* Martin Gogolla, University of Bremen, Germany
+* Shahar Maoz, Tel Aviv University, Israel
+* Istvan Rath, Budapest University of Technology and Economics, Hungary
+* Bernhard Rumpe, RWTH Aachen, Germany
+* Frederic Tuong, Univ. Paris-Sud - IRT SystemX - LRI, France
+* Claas Wilke, Technische Universitat Dresden, Germany
+* Edward Willink, Willink Transformations Ltd., UK
+* Burkhart Wolff, Univ. Paris-Sud - LRI, France
+* Steffen Zschaler, King's College, UK

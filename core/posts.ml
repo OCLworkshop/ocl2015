@@ -133,7 +133,7 @@ let () =
       <div class="col-md-8">
 
         <div style="text-align: center">
-          <h4 style="color:#000080">15th International Workshop on<br/><b>Object Constraint Language</b></h4>
+          <h4 style="color:#000080">15th International Workshop on<br/><b>OCL and Textual Modeling</b></h4>
           <h5><div style="color:#777">co-located with</div><a href=$str: CFP.models2015 $><img src="images/models2015LogoFullsize2.png" alt="Models 2015 Ottawa" width="101" height="101"/></a></h5>
         </div>
 
