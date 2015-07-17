@@ -101,7 +101,7 @@ pre-conference edition of CEUR (http://www.ceur-ws.org).
 ## Important Dates
 
 ```
-Submission of papers:      July 17, 2015
+Submission of papers:      July 26, 2015 (extended)
 Notification:            August 21, 2015
 Workshop date:        September 28, 2015
 ```
