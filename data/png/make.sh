@@ -53,3 +53,4 @@ pngcrush -rem gAMA -rem cHRM -rem iCCP -rem sRGB $dir/$fic.png $f
 mv $f $dir/$fic.png
 
 # see also: https://openclipart.org/download/121621/Maple-Leaf-by-Merlin2525.svg
+# see also: https://openclipart.org/download/65851/1276282624.svg
