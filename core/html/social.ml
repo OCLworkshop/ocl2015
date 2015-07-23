@@ -73,7 +73,12 @@ module Social : PAGE = struct
     BatList.map
       (fun x -> <:html< <tr><td style="padding-bottom:10px">$list: [x] $</td></tr> >>)
       [       <:html<
-      <h1>News</h1>
+      <h1>
+        <a href="http://github.com/OCLworkshop/ocl2015/commits/master.atom">
+          News
+          <img alt="rss" src="images/rodentia-icons_news-feed.png"></img>
+        </a>
+      </h1>
               >>
             ; <:html<
       <div id="msg1" class="small" style="text-align:justify;color:#767676"></div>
