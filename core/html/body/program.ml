@@ -42,6 +42,18 @@ module Program : PAGE = struct
   let file = "program.html"
   let title = "Program"
 
+  let l = BatList.map (function time, l -> 
+            let l = 
+              BatList.map (function time, l_author, title, l ->
+                             let l_author = BatList.map (function motif, (author, None) -> <:html< <span>$str: motif $</span><span style="color:#337AB7">$str: author $</span> >>
+                                                                | motif, (author, Some ln) -> <:html< <span>$str: motif $</span><a href=$str: ln $>$str: author$</a> >>) l_author in
+                             let l = BatList.map (function name, ln -> <:html< <a href=$str: ln $>$str: name$</a> >>) l in
+                             <:html< <li><div style="color:#727272">$str: time $</div>
+                                         $list: l_author $
+                                         <div><b>$str: title $</b></div>
+                                         $list: l$</li> >>) l in
+            <:html< <h4>$str: time $</h4><div><ul>$list: l $</ul></div> >>) CFP.program
   let body = body ("Program Overview", <:html<
+$list: l $
 >>)
 end

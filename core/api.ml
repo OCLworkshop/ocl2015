@@ -92,6 +92,8 @@ module CFP = struct
                                | _ :: xs -> goto_empty xs in
                              goto_empty @@ insert @@ content file
 
+  let parse1 = parse (fun x -> "" :: "" :: "" :: x)
+
   (* *)
 
   let models2015 = "http://cruise.eecs.uottawa.ca/models2015"
@@ -108,7 +110,7 @@ module CFP = struct
   let [ _
       ; organizer_title, organizer_body
       ; _, organizer_mail_body
-      ; _, pc_body ] = parse (fun x -> "" :: "" :: "" :: x) "data/OCL-2015-organizer.txt"
+      ; _, pc_body ] = parse1 "data/OCL-2015-organizer.txt"
 
   let split_nl = L.group_consecutive (fun a b -> a <> "" && b <> "")
   let conc = concat "\n"
@@ -164,9 +166,30 @@ module CFP = struct
   let organizer_body = sp_people organizer_body
   let pc_body =
     let pc, url =
-      BatList.split
-        (BatList.map
+      L.split
+        (L.map
            (function [x] -> x, None | [x;y] -> x, Some y)
            (L.group_consecutive (let f x = BatChar.is_lowercase x.[0] in fun a b -> f a || f b) pc_body)) in
     url, sp_people pc
+
+  let program =
+    L.map
+      (function t, l ->
+        t, L.map
+             (function time :: author :: title :: l -> 
+                 time
+               , L.map (function motif, s ->
+                                  motif,
+                                  match L.rev (nsplit s ~by:" ") with
+                                  | s0 :: l when String.contains s0 '.' -> String.concat " " (L.rev l), Some s0
+                                  | _ -> s, None)
+                       (match nsplit author ~by:" and " with
+                        | [author0; author1] -> (match nsplit author0 ~by:", " with
+                                                      | x :: xs -> (("", x) :: L.map (fun s -> ", ", s) xs) @ [(" and ", author1)]
+                                                      | _ -> ["", author0])
+                        | _ -> ["", author])
+               , title
+               , L.map (fun s -> let [ty; ln] = nsplit s ~by:": " in ty, ln) l)
+             (List.filter (function [""] -> false | _ -> true) (split_nl l)))
+      (L.tl (parse1 "data/OCL-2015-program.txt"))
 end
