@@ -4,11 +4,11 @@
 Session 1: Challenges of Constraint Languages
 =============================================
 9:15 - 9:45
-Colin Atkinson, Ralph Gerbig and Thomas Kühne
+Colin Atkinson http://swt.informatik.uni-mannheim.de, Ralph Gerbig http://swt.informatik.uni-mannheim.de and Thomas Kühne http://ecs.vuw.ac.nz/~tk
 Opportunities and Challenges for Deep Constraint Languages
 
 9:45 - 10:15
-Adolfo Sanchez-Barbudo Herrera, Edward Willink and Richard Paige
+Adolfo Sanchez-Barbudo Herrera http://cs.york.ac.uk, Edward Willink and Richard Paige http://www.cs.york.ac.uk/~paige
 An OCL-based bridge from concrete to abstract syntax
 
 10:15 - 10:45 Coffee Break
@@ -34,7 +34,7 @@ Timo Kehrer, Christopher Pietsch, Udo Kelter, Daniel Strüber and Steffen Vaupel
 An Adaptable Tool Environment for High-level Differencing of Textual Models
 
 13:30 - 14:00
-Jesús Sánchez Cuadrado
+Jesús Sánchez Cuadrado http://sanchezcuadrado.es
 Recursion and iteration support in USE Validator with AnATLyzer
 
 14:00 - 14:30
@@ -42,7 +42,7 @@ Ed Seidewitz and Jérémie Tatibouet
 Alf: Integrating Textual and Graphical Modeling in UML
 
 14:30 - 15:00
-Arnaud Dieumegard, Marc Pantel, Guillaume Babin and Martin Carton
+Arnaud Dieumegard http://dieumegard.perso.enseeiht.fr, Marc Pantel http://www.enseeiht.fr/~pantel, Guillaume Babin and Martin Carton
 A lightweight Why3 formal encoding of an OCL language component for DSML development
 
 15:00 - 15:30 Coffee Break
