@@ -1,21 +1,21 @@
-9:00 - 9:15 Introduction / Welcome
-==================================
+09:00 - 09:15 Introduction / Welcome
+====================================
 
-Session 1: Challenges of Constraint Languages
-=============================================
-9:15 - 9:45
+09:15 - 10:15 Session 1: Challenges of Constraint Languages
+===========================================================
+09:15 - 09:45
 Colin Atkinson http://swt.informatik.uni-mannheim.de, Ralph Gerbig http://swt.informatik.uni-mannheim.de and Thomas Kühne http://ecs.vuw.ac.nz/~tk
 Opportunities and Challenges for Deep Constraint Languages
 
-9:45 - 10:15
+09:45 - 10:15
 Adolfo Sanchez-Barbudo Herrera http://cs.york.ac.uk, Edward Willink and Richard Paige http://www.cs.york.ac.uk/~paige
 An OCL-based bridge from concrete to abstract syntax
 
 10:15 - 10:45 Coffee Break
 ==========================
 
-Session 2: Evaluation
-=====================
+10:45 - 12:00 Session 2: Evaluation
+===================================
 10:45 - 11:15
 Frédéric Jouault and Olivier Beaudoux
 On the Use of Active Operations for Incremental Bidirectional Evaluation of OCL
@@ -27,8 +27,8 @@ Lazy Evaluation for OCL
 12:00 - 13:00 Lunch
 ===================
 
-Session 3: Tools and Emerging Ideas
-====================================
+13:00 - 15:00 Session 3: Tools and Emerging Ideas
+=================================================
 13:00 - 13:30
 Timo Kehrer, Christopher Pietsch, Udo Kelter, Daniel Strüber and Steffen Vaupel
 An Adaptable Tool Environment for High-level Differencing of Textual Models
@@ -48,8 +48,8 @@ A lightweight Why3 formal encoding of an OCL language component for DSML develop
 15:00 - 15:30 Coffee Break
 ==========================
 
-Session 4: Extending OCL and Panel Discussion
-=============================================
+15:30 - 17:00 Session 4: Extending OCL and Panel Discussion
+===========================================================
 15:30 - 16:00
 Edward Willink
 Safe Navigation in OCL
