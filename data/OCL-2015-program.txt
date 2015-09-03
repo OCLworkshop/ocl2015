@@ -38,8 +38,8 @@ Jesús Sánchez Cuadrado http://sanchezcuadrado.es
 Recursion and iteration support in USE Validator with AnATLyzer
 
 14:00 - 14:30
-Ed Seidewitz and Jérémie Tatibouet
-Alf: Integrating Textual and Graphical Modeling in UML
+Edward Willink
+Safe Navigation in OCL
 
 14:30 - 15:00
 Arnaud Dieumegard http://dieumegard.perso.enseeiht.fr, Marc Pantel http://www.enseeiht.fr/~pantel, Guillaume Babin and Martin Carton
@@ -51,8 +51,8 @@ A lightweight Why3 formal encoding of an OCL language component for DSML develop
 15:30 - 17:00 Session 4: Extending OCL and Panel Discussion
 ===========================================================
 15:30 - 16:00
-Edward Willink
-Safe Navigation in OCL
+Ed Seidewitz and Jérémie Tatibouet
+Alf: Integrating Textual and Graphical Modeling in UML
 
 16:00 - 17:00
  
