@@ -6,10 +6,16 @@
 09:15 - 09:45
 Colin Atkinson http://swt.informatik.uni-mannheim.de, Ralph Gerbig http://swt.informatik.uni-mannheim.de and Thomas Kühne http://ecs.vuw.ac.nz/~tk
 Opportunities and Challenges for Deep Constraint Languages
+author_info: Universität Mannheim, Germany
+author_info: Universität Mannheim, Germany
+author_info: Victoria University of Wellington, New Zealand
 
 09:45 - 10:15
-Adolfo Sanchez-Barbudo Herrera http://cs.york.ac.uk, Edward Willink and Richard Paige http://www.cs.york.ac.uk/~paige
+Adolfo Sánchez-Barbudo Herrera http://cs.york.ac.uk, Edward Willink and Richard F. Paige http://www.cs.york.ac.uk/~paige
 An OCL-based bridge from concrete to abstract syntax
+author_info: Department of Computer Science, University of York, UK
+author_info: Willink Transformations Ltd, UK
+author_info: Department of Computer Science, University of York, UK
 
 10:15 - 10:45 Coffee Break
 ==========================
@@ -19,10 +25,15 @@ An OCL-based bridge from concrete to abstract syntax
 10:45 - 11:15
 Frédéric Jouault and Olivier Beaudoux
 On the Use of Active Operations for Incremental Bidirectional Evaluation of OCL
+author_info: Groupe ESEO, France
+author_info: Groupe ESEO, France
 
 11:15 - 11:45
 Massimo Tisi, Rémi Douence and Dennis Wagelaar
 Lazy Evaluation for OCL
+author_info: AtlanMod team (Inria, Mines Nantes, LINA), France
+author_info: Ascola team (Inria, Mines Nantes, LINA), France
+author_info: HealthConnect NV, Belgium
 
 12:00 - 13:00 Lunch
 ===================
@@ -32,18 +43,29 @@ Lazy Evaluation for OCL
 13:00 - 13:30
 Timo Kehrer, Christopher Pietsch, Udo Kelter, Daniel Strüber and Steffen Vaupel
 An Adaptable Tool Environment for High-level Differencing of Textual Models
+author_info: Universität Siegen, Germany
+author_info: Universität Siegen, Germany
+author_info: Universität Siegen, Germany
+author_info: Philipps-Universität Marburg, Germany
+author_info: Philipps-Universität Marburg, Germany
 
 13:30 - 14:00
 Jesús Sánchez Cuadrado http://sanchezcuadrado.es
 Recursion and iteration support in USE Validator with AnATLyzer
+author_info: Modelling and Software Engineering Research Group, Universidad Autónoma de Madrid, Spain
 
 14:00 - 14:30
-Edward Willink
+Edward D. Willink
 Safe Navigation in OCL
+author_info: Willink Transformations Ltd, UK
 
 14:30 - 15:00
 Arnaud Dieumegard http://dieumegard.perso.enseeiht.fr, Marc Pantel http://www.enseeiht.fr/~pantel, Guillaume Babin and Martin Carton
-A lightweight Why3 formal encoding of an OCL language component for DSML development
+Tool Paper: A lightweight formal encoding of a Constraint Language for DSMLs
+author_info: IRIT ENSEEIHT, Université de Toulouse, France
+author_info: IRIT ENSEEIHT, Université de Toulouse, France
+author_info: IRIT ENSEEIHT, Université de Toulouse, France
+author_info: IRIT ENSEEIHT, Université de Toulouse, France
 
 15:00 - 15:30 Coffee Break
 ==========================
@@ -52,7 +74,9 @@ A lightweight Why3 formal encoding of an OCL language component for DSML develop
 ===========================================================
 15:30 - 16:00
 Ed Seidewitz and Jérémie Tatibouet
-Alf: Integrating Textual and Graphical Modeling in UML
+Tool Paper: Combining Alf and UML in Modeling Tools - An Example with Papyrus -
+author_info: Model Driven Solutions, USA
+author_info: CEA, LIST, Laboratory of Model Driven Engineering for Embedded Systems, France
 
 16:00 - 17:00
  
