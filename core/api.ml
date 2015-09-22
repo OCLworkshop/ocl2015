@@ -172,12 +172,15 @@ module CFP = struct
            (L.group_consecutive (let f x = BatChar.is_lowercase x.[0] in fun a b -> f a || f b) pc_body)) in
     url, sp_people pc
 
+  let short_time time = left (filter (fun c -> c >= '0' && c <= '9') time) 4
+
   let program =
     L.map
       (function t, l ->
         t, L.map
              (function time :: author :: title :: l -> 
                  time
+               , (try Some (content' (sprintf "data/OCL-2015-abstract_%s.txt" (short_time time))) with _ -> None)
                , L.map (function motif, s ->
                                   motif,
                                   match L.rev (nsplit s ~by:" ") with

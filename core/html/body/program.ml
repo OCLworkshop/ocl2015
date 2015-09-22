@@ -43,11 +43,14 @@ module Program : PAGE = struct
   let title = "Program"
 
   module L = BatList
+  module S = BatString
+
+  let f_author = L.partition (function "author_info", _ -> true | _ -> false)
 
   let l = L.map (function time, l -> 
             let l = 
-              L.map (function time, l_author, title, l ->
-                             let l_author_info, l = L.partition (function "author_info", _ -> true | _ -> false) l in
+              L.map (function time, abstract, l_author, title, l ->
+                             let l_author_info, l = f_author l in
                              let l_author, (l_author_info1, l_author_info2) = 
                                let l1, l2 =
                                  let pat = ", " in
@@ -57,7 +60,7 @@ module Program : PAGE = struct
                                                                           motif, <:html< <span style="color:#337AB7">$str: author $</span> >>
                                                                       | motif, (author, Some ln) ->
                                                                           motif, <:html< <span><a href=$str: ln $>$str: author$</a></span> >> in
-                                                    let info1, info2 = BatString.rsplit info ~by:pat in
+                                                    let info1, info2 = S.rsplit info ~by:pat in
                                                     <:html< <td style="width:3em;background-color:#F8F8F8;color:#727272">$str: motif $</td><td style="font-size:120%;padding-left:0.5em;padding-right:0.5em">$list: [author] $</td> >>,
                                                     (<:html< <td style="background-color:#F8F8F8"></td><td style="padding-left:0.5em;padding-right:0.5em">$str: info1 $</td> >>,
                                                     <:html< <td style="background-color:#F8F8F8"></td><td style="color:#727272;padding-left:0.5em;padding-right:0.5em">$str: info2 $</td> >>))
@@ -65,14 +68,42 @@ module Program : PAGE = struct
                                                                                    | _ when L.length l_author_info = L.length l_author -> l_author_info)
                                                  l_author) in
                                l1, L.split l2 in
-                             let l = L.map (function name, ln -> <:html< <a href=$str: ln $><b>$str: name$</b></a> >>) l in
+                             let l =
+                               let l = L.map (function name, ln -> <:html< <a href=$str: ln $><b>$str: name$</b></a> >>) l in
+                               if abstract = None then
+                                 l
+                               else 
+                                 <:html< <a href=$str: "#" ^ CFP.short_time time $><b>abstract</b></a> >> :: l in
                              <:html< <li><div style="color:#727272">$str: time $</div>
                                          <div style="font-size:120%"><b>$str: title $</b></div>
                                          $list: l$
                                          <table style="text-align:center"><tbody><tr>$list: l_author $</tr><tr>$list: l_author_info1 $</tr><tr>$list: l_author_info2 $</tr></tbody></table></li> >>) l in
             <:html< <hr></hr><h4>$str: time $</h4><div><ul style="padding-left:8em">$list: l $</ul></div> >>) CFP.program
+
+  let l_abstract = L.map (function time, l -> 
+            let time = let by = " " in S.concat by L.(tl (tl (tl (S.nsplit time ~by)))) in
+            let l = 
+              L.map (function time, abstract, _, title, l ->
+                             match abstract with
+                               None -> <:html< >>
+                             | Some s -> 
+                               let _, l = f_author l in
+                               let l_abstract =
+                                 let l = L.map (fun s -> <:html< <div style="text-align:justify">$str: s $</div> >>) (S.nsplit s ~by:"\n\n") in
+                                 <:html< $list: l $ >>  in
+                               let l = L.map (function name, ln -> <:html< <a href=$str: ln $><b>$str: name$</b></a> >>) l in
+                               <:html< <a name=$str: CFP.short_time time $><div style="color:#727272">$str: time $</div></a>
+                                       <div><b>$str: title $</b></div>
+                                       $list: [l_abstract] $
+                                       <br></br> >>) l in
+            let l = if l = [] then l else <:html< <hr></hr><div style="text-align:right;font-style:italic">$str: time $</div> >> :: l in
+            <:html< $list: l $ >>) CFP.program
+
   let body = body ("Program Overview", <:html<
 <a href="http://cruise.eecs.uottawa.ca/models2015/workshops.html"><b>Workshop Room: Panorama</b></a>
 $list: l $
+        <hr></hr>
+        <div style="margin-top:100px;text-align: center"><h3><b>Abstract</b></h3></div>
+$list: l_abstract $
 >>)
 end
