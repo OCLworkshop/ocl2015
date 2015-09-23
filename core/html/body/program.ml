@@ -69,11 +69,11 @@ module Program : PAGE = struct
                                                  l_author) in
                                l1, L.split l2 in
                              let l =
-                               let l = L.map (function name, ln -> <:html< <a href=$str: ln $><b>$str: name$</b></a> >>) l in
+                               let l = L.map (function name, ln -> <:html< <a href=$str: ln $ style="margin-left:1em;color:#B3001D"><b>$str: name$</b></a> >>) l in
                                if abstract = None then
                                  l
                                else 
-                                 <:html< <a href=$str: "#" ^ CFP.short_time time $><b>abstract</b></a> >> :: l in
+                                 <:html< <a href=$str: "#" ^ CFP.short_time time $ style="color:#B3001D"><b>abstract</b></a> >> :: l in
                              <:html< <li><div style="color:#727272">$str: time $</div>
                                          <div style="font-size:120%"><b>$str: title $</b></div>
                                          $list: l$
