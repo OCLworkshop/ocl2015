@@ -46,11 +46,15 @@ module Program : PAGE = struct
   module S = BatString
 
   let f_author = L.partition (function "author_info", _ -> true | _ -> false)
+  let f_speaker = L.partition (function "speaker", _ -> true | _ -> false)
 
-  let l = L.map (function time, l -> 
+  let l = L.map (function time, chair, l -> 
             let l = 
               L.map (function time, abstract, l_author, title, l ->
                              let l_author_info, l = f_author l in
+                             let l_speaker, l = match f_speaker l with
+                                                | [_, speaker], l -> [ <:html< <div style="font-style:italic">Speaker: $str: speaker $</div> >>], l
+                                                | _ -> [], l in
                              let l_author, (l_author_info1, l_author_info2) = 
                                let l1, l2 =
                                  let pat = ", " in
@@ -77,10 +81,12 @@ module Program : PAGE = struct
                              <:html< <li><div style="color:#727272">$str: time $</div>
                                          <div style="font-size:120%"><b>$str: title $</b></div>
                                          $list: l$
+                                         $list: l_speaker $
                                          <table style="text-align:center"><tbody><tr>$list: l_author $</tr><tr>$list: l_author_info1 $</tr><tr>$list: l_author_info2 $</tr></tbody></table></li> >>) l in
-            <:html< <hr></hr><h4>$str: time $</h4><div><ul style="padding-left:8em">$list: l $</ul></div> >>) CFP.program
+            let chair = match chair with None -> [] | Some chair -> [ <:html< <div style="text-align:right;font-style:italic">$str: chair $</div> >> ] in
+            <:html< <hr></hr><h4>$str: time $</h4>$list: chair $<div><ul style="padding-left:8em">$list: l $</ul></div> >>) CFP.program
 
-  let l_abstract = L.map (function time, l -> 
+  let l_abstract = L.map (function time, _, l -> 
             let time = let by = " " in S.concat by L.(tl (tl (tl (S.nsplit time ~by)))) in
             let l = 
               L.map (function time, abstract, _, title, l ->
@@ -88,6 +94,7 @@ module Program : PAGE = struct
                                None -> <:html< >>
                              | Some s -> 
                                let _, l = f_author l in
+                               let _, l = f_speaker l in
                                let l_abstract =
                                  let l = L.map (fun s -> <:html< <div style="text-align:justify">$str: s $</div> >>) (S.nsplit s ~by:"\n\n") in
                                  <:html< $list: l $ >>  in

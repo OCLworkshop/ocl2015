@@ -55,3 +55,5 @@ mv $f $dir/$fic.png
 # see also: https://openclipart.org/download/121621/Maple-Leaf-by-Merlin2525.svg
 # see also: https://openclipart.org/download/65851/1276282624.svg
 # see also: https://openclipart.org/download/212393/rodentia-icons_news-feed.svg
+# see also: https://openclipart.org/download/140251/messy-lined-papers.svg
+# see also: https://openclipart.org/download/3297/barretr-Pencil.svg

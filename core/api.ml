@@ -176,8 +176,9 @@ module CFP = struct
 
   let program =
     L.map
-      (function t, l ->
-        t, L.map
+      (function t, [] -> t, None, []
+      | t, chair :: "" :: l ->
+        t, Some chair, L.map
              (function time :: author :: title :: l -> 
                  time
                , (try Some (content' (sprintf "data/OCL-2015-abstract_%s.txt" (short_time time))) with _ -> None)
