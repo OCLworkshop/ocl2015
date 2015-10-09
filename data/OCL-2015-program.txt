@@ -13,6 +13,7 @@ author_info: Universität Mannheim, Germany
 author_info: Victoria University of Wellington, New Zealand
 paper: http://ocl2015.lri.fr/OCL_2015_paper_0921_0915.pdf
 speaker: Colin Atkinson
+slide: http://ocl2015.lri.fr/slide/atkinson-ocl-2015-slides.pptx
 
 09:45 - 10:15
 Adolfo Sánchez-Barbudo Herrera http://cs.york.ac.uk, Edward Willink and Richard F. Paige http://www.cs.york.ac.uk/~paige
@@ -22,6 +23,8 @@ author_info: Willink Transformations Ltd, UK
 author_info: Department of Computer Science, University of York, UK
 paper: http://ocl2015.lri.fr/OCL_2015_paper_0921_0945.pdf
 speaker: Adolfo Sánchez-Barbudo Herrera
+slide: http://ocl2015.lri.fr/slide/An%20OCL-based%20bridge%20from%20CS%20to%20AS.pdf
+source: https://docs.google.com/presentation/d/1HFWQBL2605CgHw1woh4MeaxJm_DsAeXskllgTP5ZD7M/edit?usp=sharing
 
 10:15 - 10:45 Coffee Break
 ==========================
@@ -37,6 +40,7 @@ author_info: Groupe ESEO, France
 author_info: Groupe ESEO, France
 paper: http://ocl2015.lri.fr/OCL_2015_paper_0921_1045.pdf
 speaker: Frédéric Jouault
+slide: http://ocl2015.lri.fr/slide/OCL2015_ActiveOCL-crop.pdf
 
 11:15 - 11:45
 Massimo Tisi, Rémi Douence and Dennis Wagelaar
@@ -46,6 +50,7 @@ author_info: Ascola team (Inria, Mines Nantes, LINA), France
 author_info: HealthConnect NV, Belgium
 paper: http://ocl2015.lri.fr/OCL_2015_paper_0921_1115.pdf
 speaker: Massimo Tisi
+slide: http://ocl2015.lri.fr/slide/OCL2015-LazyOCL.pdf
 
 12:00 - 13:00 Lunch
 ===================
@@ -64,6 +69,8 @@ author_info: Philipps-Universität Marburg, Germany
 author_info: Philipps-Universität Marburg, Germany
 paper: http://ocl2015.lri.fr/OCL_2015_paper_0921_1300.pdf
 speaker: Daniel Strüber
+slide: http://ocl2015.lri.fr/slide/2015_models_silift_hdtm.pptx
+demo: http://ocl2015.lri.fr/slide/Models2015.avi
 
 13:30 - 14:00
 Jesús Sánchez Cuadrado http://sanchezcuadrado.es
@@ -71,6 +78,7 @@ Recursion and iteration support in USE Validator with AnATLyzer
 author_info: Modelling and Software Engineering Research Group, Universidad Autónoma de Madrid, Spain
 paper: http://ocl2015.lri.fr/OCL_2015_paper_0921_1330.pdf
 speaker: Jesús Sánchez Cuadrado
+slide: http://ocl2015.lri.fr/slide/slides-jsanchez.pdf
 
 14:00 - 14:30
 Edward D. Willink
@@ -78,6 +86,7 @@ Safe Navigation in OCL
 author_info: Willink Transformations Ltd, UK
 paper: http://ocl2015.lri.fr/OCL_2015_paper_0921_1400.pdf
 speaker: Edward D. Willink
+slide: http://ocl2015.lri.fr/slide/SafeNavigation.odp
 
 14:30 - 15:00
 Arnaud Dieumegard http://dieumegard.perso.enseeiht.fr, Marc Pantel http://www.enseeiht.fr/~pantel, Guillaume Babin and Martin Carton
@@ -88,6 +97,7 @@ author_info: IRIT ENSEEIHT, Université de Toulouse, France
 author_info: IRIT ENSEEIHT, Université de Toulouse, France
 paper: http://ocl2015.lri.fr/OCL_2015_paper_0921_1430.pdf
 speaker: Marc Pantel
+slide: http://ocl2015.lri.fr/slide/slides.pdf
 
 15:00 - 15:30 Coffee Break
 ==========================
@@ -103,6 +113,7 @@ author_info: Model Driven Solutions, USA
 author_info: CEA, LIST, Laboratory of Model Driven Engineering for Embedded Systems, France
 paper: http://ocl2015.lri.fr/OCL_2015_paper_0921_1530.pdf
 speaker: Ed Seidewitz
+slide: http://ocl2015.lri.fr/slide/XUML%20Presentation%20150928%20OCL15%20Alf%20and%20UML.pptx
 
 16:00 - 17:00
  
