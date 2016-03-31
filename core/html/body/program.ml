@@ -106,6 +106,7 @@ module Program : PAGE = struct
             <:html< $list: l $ >>) CFP.program
 
   let body = body ("Program Overview", <:html<
+<a href="http://ceur-ws.org/Vol-1512/"><b>Proceedings at CEUR-WS</b></a><br></br>
 <a href="http://cruise.eecs.uottawa.ca/models2015/workshops.html"><b>Workshop Room: Panorama</b></a>
 $list: l $
         <hr></hr>
