@@ -17,7 +17,7 @@ slide: http://ocl2015.lri.fr/slide/atkinson-ocl-2015-slides.pptx
 
 09:45 - 10:15
 Adolfo Sánchez-Barbudo Herrera http://cs.york.ac.uk, Edward Willink and Richard F. Paige http://www.cs.york.ac.uk/~paige
-An OCL-based bridge from concrete to abstract syntax
+An OCL-based Bridge from Concrete to Abstract Syntax
 author_info: Department of Computer Science, University of York, UK
 author_info: Willink Transformations Ltd, UK
 author_info: Department of Computer Science, University of York, UK
@@ -74,7 +74,7 @@ demo: http://ocl2015.lri.fr/slide/Models2015.avi
 
 13:30 - 14:00
 Jesús Sánchez Cuadrado http://sanchezcuadrado.es
-Recursion and iteration support in USE Validator with AnATLyzer
+Recursion and Iteration Support in USE Validator with AnATLyzer
 author_info: Modelling and Software Engineering Research Group, Universidad Autónoma de Madrid, Spain
 paper: http://ocl2015.lri.fr/OCL_2015_paper_0921_1330.pdf
 speaker: Jesús Sánchez Cuadrado
@@ -90,7 +90,7 @@ slide: http://ocl2015.lri.fr/slide/SafeNavigation.odp
 
 14:30 - 15:00
 Arnaud Dieumegard http://dieumegard.perso.enseeiht.fr, Marc Pantel http://www.enseeiht.fr/~pantel, Guillaume Babin and Martin Carton
-Tool Paper: A lightweight formal encoding of a Constraint Language for DSMLs
+Tool Paper: A Lightweight Formal Encoding of a Constraint Language for DSMLs
 author_info: IRIT ENSEEIHT, Université de Toulouse, France
 author_info: IRIT ENSEEIHT, Université de Toulouse, France
 author_info: IRIT ENSEEIHT, Université de Toulouse, France
